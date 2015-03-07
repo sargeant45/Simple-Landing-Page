@@ -1,0 +1,89 @@
+@import "bourbon"
+
+body
+	text-align: center
+	font-family: 'Muli'
+	color: rgba(0, 0, 0, 0.4)
+	line-height: 1.2
+
+ul
+	list-style-type: none
+li
+	display: inline
+	
+.structure
+	margin-top: 46px
+	max-width: 700px
+	margin-left: auto
+	margin-right: auto
+
+.profile
+	width: 272px
+	height: 272px
+	display: block
+	margin: 0 auto
+	margin-bottom: 40px
+	margin-top: 5px
+	background: #F3F3F3
+	background: url('https://pbs.twimg.com/profile_images/574344697210146817/gSDolnwE.jpeg') no-repeat
+	background-size: 272px 272px
+	border-radius: 300px
+
+h1
+	padding-top: 10px
+	font-size: 300%
+
+.description
+	padding-bottom: 40px
+	padding-top: 40px
+
+.fa
+	margin: 20px
+
+.hidden
+	display: none
+
+a
+	color: rgba(0, 0, 0, 0.4)
+
+.dribbble:hover
+	color: #ea4c89
+
+.github:hover
+	color: black
+
+.medium:hover
+	color: black
+
+.twitter:hover
+	color: #55acee
+
+@media (max-width: 320px)
+	html,
+	body
+		line-height: 38px
+		font-size: 21px
+		display: block
+
+
+@media (max-device-width: 720px)
+	h1
+		font-size: 200%
+		padding-bottom: 20px
+
+	.description
+		font-size: 150%
+		padding-top: 60px
+		padding-bottom: 60px
+
+	.structure
+		margin-top: 20px
+
+	.profile
+		+size(136px)
+		background-size: 136px 136px
+
+footer
+	padding-top: 10px
+	a
+		text-decoration: none
