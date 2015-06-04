@@ -52,10 +52,22 @@ a {
   color: black; }
 
 .medium:hover {
-  color: black; }
+  color: black; 
+  
+}
 
 .twitter:hover {
-  color: #55acee; }
+  color: #55acee; 
+}
+.instagram:hover {
+  color: #A97F35;
+}
+.email:hover {
+  color: #10A1FF;
+}
+.youtube:hover {
+  color: #b31217;
+}
 
 @media (max-width: 320px) {
   html,
