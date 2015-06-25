@@ -99,7 +99,7 @@ MIT license, bitches
 }
 
 .icon {
-    transition: transform 1s, color 1s;
+    transition: transform 1s, color 1s, background 1s;
     
     /* from hover.css's hvr-grow */
     display: inline-block;
