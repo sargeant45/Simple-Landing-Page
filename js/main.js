@@ -1,7 +1,7 @@
 window.onload = function() {
   var email, i, item, len, numberletters, obfuscated;
   $.ajax({
-    url: 'https://api.github.com/users/sargeant45',
+    url: 'https://api.github.com/users/soops',
     type: 'GET',
     dataType: 'JSONP',
     success: function(userdata) {
