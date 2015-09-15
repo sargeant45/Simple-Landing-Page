@@ -1,3 +1,4 @@
+// email obfuscator and stuff
 window.onload = function() {
   var email, i, item, len, numberletters, obfuscated;
   $.ajax({
