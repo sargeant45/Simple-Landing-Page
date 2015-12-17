@@ -60,6 +60,9 @@ MIT license, bitches
     .social-icons a {
         font-size: 32px;
     }
+    .social {
+        text-align: center;
+    }
 }
 
 /* Profile Picture */
@@ -99,7 +102,7 @@ MIT license, bitches
 }
 
 .icon {
-    transition: transform .3s, color .3s, background .3s;
+    transition: transform .2s, color .2s, background .2s;
 
     /* from hover.css's hvr-grow */
     display: inline-block;
@@ -133,18 +136,17 @@ MIT license, bitches
 /* Social Icons */
 .social {
     width: 100% !important;
-    text-align: center;
 }
 .social-icons {
     font-size: 3em;
 }
 .github, .twitter, .gplus, .instagram, .youtube, .soundcloud, .steam, .medium {
-    transition: transform .3s, color .3s;
+    transition: transform .2s, color .2s;
     padding-left: 5px;
     padding-right: 5px;
 }
 .social-icons a {
-    color: #242424;
+    color: white;
 }
 
 /* Social Icon Hover Colors */
@@ -161,9 +163,6 @@ MIT license, bitches
     color: #125688;
 }
 .youtube:hover {
-    background: -webkit-linear-gradient(#e52d27, #b31217);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     color: #e52d27;
 }
 .soundcloud:hover {
@@ -174,6 +173,10 @@ MIT license, bitches
 }
 .medium:hover {
     color: black;
+}
+
+h5 {
+    text-align: center;
 }
 
 /* Footer */
@@ -189,6 +192,7 @@ MIT license, bitches
     width: 100%;
     /* Set the fixed height of the footer here */
     height: 80px;
+    line-height: 80px;
 
     /* Background */
     background-image: url(img/rainbow.png);
@@ -210,6 +214,7 @@ html {
     position: relative;
     min-height: 100%;
 }
+
 .footer span {
     margin: 30px 0;
     font-size: 16px;
