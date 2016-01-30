@@ -34,7 +34,7 @@ MIT license, bitches
 
     /* Font */
     color: white;
-    text-shadow: 0px 1px 8px rgba(150, 150, 150, 1);
+    text-shadow: 0px 1px 8px #242424;
 }
 .jumbotron p {
     text-align: justify;
@@ -204,7 +204,7 @@ h5 {
 
     /* Font */
     color: white;
-    text-shadow: 0px 1px 8px rgba(150, 150, 150, 1);
+    text-shadow: 0px 1px 8px #242424;
 }
 body {
     /* Set margin to footer height */
