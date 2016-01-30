@@ -6,8 +6,6 @@ window.onload = function() {
     type: 'GET',
     dataType: 'JSONP',
     success: function(userdata) {
-      document.getElementById('repos').innerHTML = userdata.data['public_repos'];
-      document.getElementById('gists').innerHTML = userdata.data['public_gists'];
       $('#profile').css('background-image', 'url(' + userdata.data['avatar_url'] + ')');
     },
     error: function(e) {
@@ -16,6 +14,7 @@ window.onload = function() {
       }
     }
   });
+
   obfuscated = [5, 20, 8, 1, 14, 1, 18, 20, 5, 18, 2, 5, 18, 18, 25, "@", 7, 13, 1, 9, 12, ".", 3, 15, 13];
   numberletters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
   email = [];
@@ -30,7 +29,19 @@ window.onload = function() {
       console.log(item);
     }
   }
-  return $("#email").attr("href", "mailto:" + (email.join("")));
+  $("#email").attr("href", "mailto:" + (email.join("")));
+
+  $.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=soodologica&api_key=67bc224ceb7cea73cf835a56d247d15a&limit=2&format=json&callback=?", function(data) {
+      var html = '';
+      var counter = 1;
+      $.each(data.recenttracks.track, function(i, item) {
+          if(counter == 1) {
+              html += item.name + ' by ' + item.artist['#text'];
+          }
+          counter++
+      });
+      $('#coolcool').html(html + ".");
+  });
 };
 
 // ---

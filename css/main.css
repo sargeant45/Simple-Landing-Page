@@ -25,7 +25,7 @@ MIT license, bitches
 /* Jumbotron */
 .jumbotron {
     /* Background */
-    background-image: url(img/rainbow.png);
+    background-color: #F25252;
     background-position: center;
     background-repeat: repeat;
     -webkit-box-shadow: inset 0px 0px 36px -10px rgba(0,0,0,1);
@@ -41,7 +41,7 @@ MIT license, bitches
 }
 .jumbotron a {
     color: white;
-    transition: color .2s;
+    transition: .2s;
     text-decoration: none;
 }
 .jumbotron a:hover {
@@ -195,7 +195,7 @@ h5 {
     line-height: 80px;
 
     /* Background */
-    background-image: url(img/rainbow.png);
+    background-color: #F25252;
     background-position: center;
     background-repeat: repeat;
     -webkit-box-shadow: inset 0px 0px 36px -10px rgba(0,0,0,1);
@@ -224,12 +224,17 @@ html {
 }
 .footer a {
     color: white;
-    transition: color .2s;
+    transition: .2s;
     text-decoration: none;
 }
 .footer a:hover {
     color: black;
     text-decoration: none;
+}
+
+.bright:hover {
+    color: #FFCA30 !important;
+    text-decoration: underline;
 }
 
 /* Heart */
