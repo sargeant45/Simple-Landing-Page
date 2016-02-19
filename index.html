@@ -7,12 +7,37 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Ethan Arterberry &mdash; Internet Human</title>
 
+    <!-- syntax highlighting for the bottom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/default.min.css">
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
     <!-- Custom Links and Scripts, etc. -->
     <link rel="stylesheet" href="css/main.css">
     <script src="js/main.js"></script>
+
+    <!-- favicon gen -->
+    <link rel="apple-touch-icon" sizes="57x57" href="ico/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="ico/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="ico/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="ico/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="ico/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="ico/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="ico/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="ico/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="ico/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="ico/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="ico/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="ico/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="ico/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="ico/manifest.json">
+    <link rel="mask-icon" href="ico/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="ico/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="ico/mstile-144x144.png">
+    <meta name="msapplication-config" content="ico/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body>
     <div class="jumbotron">
@@ -21,7 +46,7 @@
                 <div class="col-md-8">
                     <h1>Hi! I'm Ethan Arterberry.</h1>
                     <h3>I'm a young designer and developer, who is heavily interested in language and the web.</h3>
-                    <h3>Right now, I'm working at <a class="bright" href="http://madebybright.com">Bright</a>.</h3>
+                    <h3>Right now, I'm working at <a class="bright" href="http://madebybright.com">Bright</a> on Nimble.</h3>
                     <h3>The last song I listened to was <span id="coolcool"></span></h3>
                     <h3>I like video games, programming, and good food.</h3>
                     <div class="social">
@@ -39,7 +64,7 @@
                                 <span class="entypo-gplus gplus icon"></span>
                             </a>
                             <!-- Instagram -->
-                            <a href="http://instagram.com/soodologica">
+                            <a href="http://instagram.com/ethanshutup">
                                 <span class="entypo-instagrem instagram icon"></span>
                             </a>
                             <!-- YouTube -->
@@ -58,6 +83,10 @@
                             <a href="https://medium.com/@soops">
                                 <span class="fa fa-medium medium icon"></span>
                             </a>
+                            <!-- last.fm -->
+                            <a href="https://last.fm/user/soodologica">
+                                <span class="fa fa-lastfm lastfm icon"></span>
+                            </a>
                             <!-- Email -->
                             <a id="email">
                                 <span class="fa fa-paper-plane twitter icon"></span>
@@ -73,92 +102,144 @@
     </div>
     <div class="container">
         <div class="showcase">
-            <h1>Here's some stuff I've done.</h1>
+            <h1>Here's some of my major projects.</h1>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 major">
                     <div class="image" style='background-image: url("css/img/essaymaker-logo.png");'></div>
                     <h2>EssayMaker</h2>
-                    <p>EssayMaker is a labour of love I've worked on for at least 4 years. I made it to fix the problem of essay organization: a thing everyone needs to know how to do but everyone hates. EssayMaker takes the clunkiness and the pain out of essay organizers and then some. OCD work in progress.</p>
+                    <p>EssayMaker is a labour of love I've worked on for at least 4 years. I made it to fix the problem of essay organization: a thing everyone needs to know how to do but everyone hates. EssayMaker takes the clunkiness and the pain out of essay organizers and then some. EssayMaker was completed in early 2016.</p>
                     <div class="links">
-                        <h3><a href="https://github.com/sargeant45/EssayMaker"><span class="entypo-github icon"></span></a> | <a href="http://getessaymaker.com"><span class="entypo-home icon"></span></a></h3>
+                        <h3><a href="https://github.com/sargeant45/EssayMaker"><span class="entypo-github icon"></span></a> <a href="http://getessaymaker.com"><span class="entypo-home icon"></span></a></h4>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 major">
                     <div class="image" style='background-image: url("css/img/sexydown-logo.png");'></div>
                     <h2>Sexydown</h2>
-                    <h5><i>actually boring</i></h5>
-                    <p>Sexydown is a speedy code and markup printer for the browser. It can print over 117 languages, syntax highlighted, plus rendered Textile and Markdown. There are tons of features, including Gist support, file upload, and a bunch of URL parameters the user can define to change settings and output.</p>
+                    <p>Sexydown is a speedy code and markup printer for the browser. <b><em>It's not as fun, exciting or raunchy as it sounds. It's actually extremely nerdy.</em></b> It can print over 117 languages, syntax highlighted, plus rendered Textile and Markdown. There are tons of features, and I implemented all of them over a month or so.</p>
                     <div class="links">
-                        <h3><a href="https://github.com/sargeant45/Sexydown"><span class="entypo-github icon"></span></a> | <a href="http://ethanarterberry.com/Sexydown"><span class="entypo-home icon"></span></a></h3>
+                        <h3><a href="https://github.com/sargeant45/Sexydown"><span class="entypo-github icon"></span></a> <a href="http://soops.github.io/Sexydown"><span class="entypo-home icon"></span></a></h3>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 major">
+                    <div class="image" style='background-image: url("css/img/nimble.png");'></div>
+                    <h2>Nimble</h2>
+                    <p>Nimble is a Wolfram|Alpha® client for your menubar that I'm working on right now at Bright. It's built on the wonderfully huge <a href="http://electron.atom.io">Electron</a>, and is blazingly fast and intuitive thanks to the others who work with me on it. Nimble is a work in progress, and we all work as hard as we can to make awesome.</p>
+                    <div class="links">
+                        <h3>
+                            <a href="http://github.com/madebybright/Nimble"><span class="entypo-github icon"></span></a>
+                            <a href="http://madebybright.com"><span class="bright fa fa-lightbulb-o icon"></span></a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            
+            <h2>Now here's some smaller stuff I've made.</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="image" style='background-image: url("css/img/heck+thegame-logo.png");'></div>
+                    <h3>"Games"</h3>
+                    <p>HECK: Know Your Weaknesses and TheGame are two "games" I developed to test new things in new programming languages. HECK was developed to test out CSS3 animations, HTML5 audio, and some jQuery, while TheGame was developed to learn Microsoft .NET's many cool tricks.</p>
+                    <div class="links">
+                        <h4><a href="https://github.com/sargeant45/TheGame"><span class="entypo-github icon thegame"></span></a> <a href="http://soops.github.io/TheGame"><span class="entypo-home icon thegame"></span></a> &nbsp; <a href="https://github.com/sargeant45/heck"><span class="entypo-github icon heck"></span></a> <a href="http://soops.github.io/heck"><span class="entypo-home icon heck"></span></a></h4>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="image" style='background-image: url("css/img/sentimood-logo.png");'></div>
+                    <h3>Sentimood</h3>
+                    <p>Sentimood was built as a minimal AFINN sentiment analyzer that easily works in the browser, under the fact that there is no other easy to use, free, and open-source sentiment analyzer that I know of written <i>for the browser.</i> Sentimood remains one of my most popular repos on GitHub, and I use it with EssayMaker.</p>
+                    <div class="links">
+                        <h4><a href="https://github.com/sargeant45/sentimood"><span class="entypo-github icon"></span></a></h4>
+                    </div>
+                </div>
+                <div class="col-md-3">
                     <div class="image" style='background-image: url("css/img/word-a-day-logo.png");'></div>
-                    <h2>WordADay</h2>
-                    <p>WordADay is a randomized dictionary for your iDevice. I currently work on WordADay at <a href="http://www.portlandlanguagecraft.com/">LanguageCraft</a> with Lucas Stueber.</p>
+                    <h3>WordADay</h3>
+                    <p>WordADay is a randomized dictionary for your iDevice. I used to work on WordADay at <a href="http://www.portlandlanguagecraft.com/">LanguageCraft</a> with the incredibly talented and awesome Lucas Stueber.</p>
                     <p>WordADay has also been featured on <a href="http://www.theimum.com/2015/12/app-friday-fast-freediscounted-apps-and-ebooks-dec-11/">The iMums</a> and <a href="http://katu.com/news/local/west-linn-teen-develops-word-a-day-app">KATU News.</a></p>
                     <div class="links">
-                        <h3><a href="https://itunes.apple.com/us/app/id1029635131"><span class="entypo-mobile icon"></span></a></h3>
+                        <h4><a href="https://itunes.apple.com/us/app/id1029635131"><span class="entypo-mobile icon"></span></a></h4>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="image" style='background-image: url("css/img/sgi-logo.png");'></div>
-                    <h2>seventh grade insecurity</h2>
-                    <p>"seventh grade insecurity" is a short book I wrote as a sort of love letter to seventh grade humor. It was written in just under 4 weeks, and includes 7 chapters. It is offensive, funny, and over exaggerated. In other words, it is the embodiment of seventh grade humor. It exercised some of my design skills, and it was a joy to create.</p>
-                    <div class="links">
-                        <h3><a href="https://github.com/sargeant45/insecurity"><span class="entypo-github icon"></span></a> | <a href="http://ethanarterberry.com/insecurity"><span class="entypo-book icon"></span></a></h3>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="image" style='background-image: url("css/img/heck+thegame-logo.png");'></div>
-                    <h2>HECK and TheGame</h2>
-                    <p>HECK: Know Your Weaknesses and TheGame are two "games" I developed to test new things in new programming languages. HECK was developed to test out CSS3 animations, HTML5 audio, and some JQuery, while TheGame was developed to try out random things in .NET C#, like writing to a Notepad window and opening websites.</p>
-                    <div class="links">
-                        <h3><a href="https://github.com/sargeant45/TheGame"><span class="entypo-github icon thegame"></span></a> | <a href="http://ethanarterberry.com/TheGame"><span class="entypo-home icon thegame"></span></a> &mdash; <a href="https://github.com/sargeant45/heck"><span class="entypo-github icon heck"></span></a> | <a href="http://ethanarterberry.com/heck"><span class="entypo-home icon heck"></span></a></h3>
-                    </div>
-                </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="image" style='background-image: url("css/img/dogeinvasion-logo.png");'></div>
-                    <h2>/r/dogeinvasion</h2>
+                    <h3>/r/dogeinvasion</h3>
                     <p>I did the design CSS stylesheets for the subreddit /r/dogeinvasion. They include some animations, some Photoshop designs I made, with some other things on top. They were really fun to make, and they were an exercise of CSS.</p>
                     <div class="links">
-                        <h3><a href="http://www.reddit.com/r/dogeinvasion/about/stylesheet"><span class="entypo-code icon"></span></a> | <a href="http://reddit.com/r/dogeinvasion"><span class="entypo-home icon"></span></a></h3>
+                        <h4><a href="http://www.reddit.com/r/dogeinvasion/about/stylesheet"><span class="entypo-code icon"></span></a> <a href="http://reddit.com/r/dogeinvasion"><span class="entypo-home icon"></span></a></h4>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
-                    <div class="image" style='background-image: url("css/img/sentimood-logo.png");'></div>
-                    <h2>sentimood</h2>
-                    <p>"sentimood" was built as a minimal AFINN sentiment analyzer that easily works in the browser, under the fact that there is no other easy to use, free, and open-source sentiment analyzer that I know of written <i>for the browser.</i></p>
+                <div class="col-md-4">
+                    <div class="image" style='background-image: url("css/img/broadcast-logo.png");'></div>
+                    <h3>Broadcast</h3>
+                    <p>Broadcast is a small CoffeeScript library (around 38 lines of CoffeeScript) that adds Scratch's broadcasts to the browser. I created it as a way of trying my hand at pseudoclasses and array comprehensions in CoffeeScript/JavaScript.</p>
                     <div class="links">
-                        <h3><a href="https://github.com/sargeant45/sentimood"><span class="entypo-github icon"></span></a></h3>
+                        <h4><a href="https://github.com/sargeant45/broadcast"><span class="entypo-github icon"></span></a> <a href="http://soops.github.io/broadcast"><span class="entypo-home icon"></span></a></h4>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="image" style='background-image: url("css/img/broadcast-logo.png");'></div>
-                    <h2>Broadcast</h2>
-                    <p>Broadcast is a small CoffeeScript library (around 38 lines of CoffeeScript) that adds Scratch's broadcasts to the browser.</p>
+                <div class="col-md-4">
+                    <div class="image" style='background-image: url("css/img/khaled.png");'></div>
+                    <h3>Khaled.js</h3>
+                    <p>Khaled.js (or just "khaled") is a small, useless, but nontheless amusing library for JavaScript that randomly generates a DJ Khaled quote. I built it because... well honestly I don't know anymore. It exists though.</p>
                     <div class="links">
-                        <h3><a href="https://github.com/sargeant45/broadcast"><span class="entypo-github icon"></span></a> | <a href="http://ethanarterberry.com/broadcast"><span class="entypo-home icon"></span></a></h3>
+                        <h4><a href="https://github.com/soops/khaled"><span class="entypo-github icon"></span></a> <a href="http://soops.github.io/broadcast"><span class="entypo-home icon"></span></a></h4>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="image" style='background-image: url("css/img/christopher.png");'></div>
+                    <h3>Christopher</h3>
+                    <p>Christopher is a code and cipher transcribing library. It can transcribe any base (hex, binary, etc) as well as Morse code, the NATO alphabet, the caesarian shift cipher, the atbash cipher, and letter numbers.</p>
+                    <div class="links">
+                        <h4><a href="https://github.com/soops/christopher"><span class="entypo-github icon"></span></a> <a href="https://www.npmjs.com/package/christopher"><span class="fa fa-gift icon"></span></a></h4>
                     </div>
                 </div>
             </div>
         </div>
       </div>
-      <footer class="footer">
-            <div class="container">
-                <span>
-                      <p style="text-align: center;">this site is <a href="https://github.com/sargeant45/sargeant45.github.io">open source</a> under the <a href="license.txt">MIT license</a> and coded with <span id="heart" class="entypo-heart"></span> by ethan arterberry</p>
-                </span>
-            </div>
-        </footer>
+    <footer class="footer">
+        <pre id="footer_code">
+            <code id="code">
+
+            </code>
+        </pre>
+    </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript for Bootstrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+    <script>
+        var codes = [{
+                language: "JavaScript",
+                code: "\/\/ Ethan Arterberry\'s website\r\n\/\/ language: JavaScript\r\n\r\nvar site = new Object()\r\nsite.author = \'Ethan Arterberry\'\r\nsite.sourceCode = \'<a title=\"view the source code of this website\" href=\"http:\/\/github.com\/soops\/soops.github.io\">soops\/soops.github.io<\/a>\'\r\nsite.license = \'<a title=\"view the MIT license\" href=\"http:\/\/github.com\/soops\/soops.github.io\/blob\/master\/license.txt\">MIT<\/a>\'\r\nsite.builtWith = \'<span id=\"heart\" class=\"entypo-heart\"><\/span>\'"
+            }, {
+                language: "Ruby",
+                code: "# Ethan Arterberry\'s website\r\n# language: Ruby\r\n\r\nsite = Hash.new(nil)\r\nsite[\'author\'] = \'Ethan Arterberry\'\r\nsite[\'sourceCode\'] = \'<a title=\"view the source code of this website\" href=\"http:\/\/github.com\/soops\/soops.github.io\">soops\/soops.github.io<\/a>\'\r\nsite[\'license\'] = \'<a title=\"view the MIT license\" href=\"http:\/\/github.com\/soops\/soops.github.io\/blob\/master\/license.txt\">MIT<\/a>\'\r\nsite[\'builtWith\'] = \'<span id=\"heart\" class=\"entypo-heart\"><\/span>\'"
+            }, {
+                language: "Python",
+                code: "# Ethan Arterberry\'s website\r\n# language: Python\r\n\r\nsite = dict()\r\nsite.author = \'Ethan Arterberry\'\r\nsite.sourceCode = \'<a title=\"view the source code of this website\" href=\"http:\/\/github.com\/soops\/soops.github.io\">soops\/soops.github.io<\/a>\'\r\nsite.license = \'<a title=\"view the MIT license\" href=\"http:\/\/github.com\/soops\/soops.github.io\/blob\/master\/license.txt\">MIT<\/a>\'\r\nsite.builtWith = \'<span id=\"heart\" class=\"entypo-heart\"><\/span>\'"
+            }, {
+                language: "CSharp",
+                code: "using System;\r\nusing System.Collections.Generic;\r\n \r\npublic class EthanArterberry\r\n{\r\n    public static void Main()\r\n    {\r\n        Dictionary<string, string> site = new Dictionary<string, string>();\r\n        site.Add(\"author\", \"Ethan Arterberry\");\r\n        site.Add(\"sourceCode\", \"<a title=\"view the source code of this website\" href=\"http:\/\/github.com\/soops\/soops.github.io\">soops\/soops.github.io<\/a>\");\r\n        site.Add(\"three\", \"<a title=\"view the MIT license\" href=\"http:\/\/github.com\/soops\/soops.github.io\/blob\/master\/license.txt\">MIT<\/a>\");\r\n        site.Add(\"four\", \"<span id=\"heart\" class=\"entypo-heart\"><\/span>\");\r\n    }\r\n}"
+            }
+        ]
+
+        var arrayIndex = Math.floor(Math.random() * codes.length)
+        $("#code").html(codes[arrayIndex].code).attr("class", codes[arrayIndex].language)
+            
+        // highlight
+        hljs.highlightBlock(document.getElementById("code"))
+
+        setInterval(function() {
+            var arrayIndex = Math.floor(Math.random() * codes.length)
+            $("#code").html(codes[arrayIndex].code).attr("class", codes[arrayIndex].language)
+            
+            // highlight
+            hljs.highlightBlock(document.getElementById("code"))
+        }, 20000)
+    </script>
   </body>
 </html>
