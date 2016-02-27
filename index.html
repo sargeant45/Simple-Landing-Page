@@ -47,7 +47,7 @@
                     <h1>Hi! I'm Ethan Arterberry.</h1>
                     <h3>I'm a young designer and developer, who is heavily interested in language and the web.</h3>
                     <h3>Right now, I'm working at <a class="bright" href="http://madebybright.com">Bright</a> on Nimble.</h3>
-                    <h3>The last song I listened to was <span id="coolcool"></span></h3>
+                    <h3><span id="music"></span></h3>
                     <h3>I like video games, programming, and good food.</h3>
                     <div class="social">
                         <div class="social-icons">
@@ -95,7 +95,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="image profile" id="profile" style='background-image: url("css/img/profile.jpeg");'></div>
+                    <div class="image profile" id="profile" style='background-image: url("css/img/profile.png");'></div>
                 </div>
             </div>
         </div>
@@ -207,37 +207,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript for Bootstrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
-    <script>
-        var codes = [{
-                language: "JavaScript",
-                code: "\/\/ Ethan Arterberry\'s website\r\n\/\/ language: JavaScript\r\n\r\nvar site = new Object()\r\nsite.author = \'Ethan Arterberry\'\r\nsite.sourceCode = \'<a title=\"view the source code of this website\" href=\"http:\/\/github.com\/soops\/soops.github.io\">soops\/soops.github.io<\/a>\'\r\nsite.license = \'<a title=\"view the MIT license\" href=\"http:\/\/github.com\/soops\/soops.github.io\/blob\/master\/license.txt\">MIT<\/a>\'\r\nsite.builtWith = \'<span id=\"heart\" class=\"entypo-heart\"><\/span>\'"
-            }, {
-                language: "Ruby",
-                code: "# Ethan Arterberry\'s website\r\n# language: Ruby\r\n\r\nsite = Hash.new(nil)\r\nsite[\'author\'] = \'Ethan Arterberry\'\r\nsite[\'sourceCode\'] = \'<a title=\"view the source code of this website\" href=\"http:\/\/github.com\/soops\/soops.github.io\">soops\/soops.github.io<\/a>\'\r\nsite[\'license\'] = \'<a title=\"view the MIT license\" href=\"http:\/\/github.com\/soops\/soops.github.io\/blob\/master\/license.txt\">MIT<\/a>\'\r\nsite[\'builtWith\'] = \'<span id=\"heart\" class=\"entypo-heart\"><\/span>\'"
-            }, {
-                language: "Python",
-                code: "# Ethan Arterberry\'s website\r\n# language: Python\r\n\r\nsite = {}\r\nsite[\"author\"] = \'Ethan Arterberry\'\r\nsite[\"sourceCode\"] = \'<a title=\"view the source code of this website\" href=\"http:\/\/github.com\/soops\/soops.github.io\">soops\/soops.github.io<\/a>\'\r\nsite[\"license\"] = \'<a title=\"view the MIT license\" href=\"http:\/\/github.com\/soops\/soops.github.io\/blob\/master\/license.txt\">MIT<\/a>\'\r\nsite[\"builtWith\"] = \'<span id=\"heart\" class=\"entypo-heart\"><\/span>\'"
-            }, {
-                language: "CSharp",
-                code: "using System;\r\nusing System.Collections.Generic;\r\n \r\npublic class EthanArterberry\r\n{\r\n    public static void Main()\r\n    {\r\n        Dictionary<string, string> site = new Dictionary<string, string>();\r\n        site.Add(\"author\", \"Ethan Arterberry\");\r\n        site.Add(\"sourceCode\", \"<a title=\"view the source code of this website\" href=\"http:\/\/github.com\/soops\/soops.github.io\">soops\/soops.github.io<\/a>\");\r\n        site.Add(\"license\", \"<a title=\"view the MIT license\" href=\"http:\/\/github.com\/soops\/soops.github.io\/blob\/master\/license.txt\">MIT<\/a>\");\r\n        site.Add(\"madeWith\", \"<span id=\"heart\" class=\"entypo-heart\"><\/span>\");\r\n    }\r\n}"
-            }
-        ]
-
-        var arrayIndex = Math.floor(Math.random() * codes.length)
-        $("#code").html(codes[arrayIndex].code).attr("class", codes[arrayIndex].language)
-            
-        // highlight
-        hljs.highlightBlock(document.getElementById("code"))
-
-        setInterval(function() {
-            var arrayIndex = Math.floor(Math.random() * codes.length)
-            $("#code").html(codes[arrayIndex].code).attr("class", codes[arrayIndex].language)
-            
-            // highlight
-            hljs.highlightBlock(document.getElementById("code"))
-        }, 20000)
-    </script>
   </body>
 </html>

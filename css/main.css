@@ -41,12 +41,19 @@ MIT license, bitches
 }
 .jumbotron a {
     color: white;
-    transition: .2s;
+    transition: 0.3s;
+}
+
+.jumbotron a:hover {
     text-decoration: none;
 }
-.jumbotron a:hover {
-    color: black;
-    text-decoration: none;
+
+.music:hover {
+    color: #f252a2 !important;
+}
+
+.bright:hover {
+    color: #FFCA30 !important;
 }
 
 @media (max-width: 480px) {
@@ -63,6 +70,22 @@ MIT license, bitches
     .social {
         text-align: center;
     }
+}
+
+/* Tooltip Album Art */
+.tooltip, .tooltip-inner {
+    background: none;
+}
+
+.tooltip-inner img {
+    border: 5px solid #eee;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);   
+    width: 125px;
+    height: 125px;
+}
+
+.tooltip.fade.in {
+    opacity: 1;
 }
 
 /* Profile Picture */
@@ -155,6 +178,7 @@ MIT license, bitches
 }
 .social-icons a {
     color: white;
+    text-decoration: none;
 }
 
 /* Social Icon Hover Colors */
@@ -199,10 +223,6 @@ footer.footer pre#footer_code {
     background-color: initial !important;
     border: none !important;
     border-radius: 0px !important;
-}
-
-.bright:hover {
-    color: #FFCA30 !important;
 }
 
 /* Heart */
