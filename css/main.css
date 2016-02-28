@@ -191,9 +191,12 @@ html, body {
 .social-icons a {
     color: white;
     text-decoration: none;
-    transition: .2s;
     padding-left: 0.09em;
     padding-right: 0.09em;
+}
+
+.social-icons a span {
+    transition: 0.2s;
 }
 
 #social-title {
