@@ -76,9 +76,6 @@ html, body {
     .social-icons a {
         font-size: 32px;
     }
-    .social-icons {
-        text-align: center;
-    }
 }
 
 /* Tooltip Album Art */
@@ -177,7 +174,7 @@ html, body {
 /* Social Icons */
 .social {
     width: 100% !important;
-    text-align: justify;
+    text-align: center;
     margin-top: 30px;
 }
 .social-icons {
