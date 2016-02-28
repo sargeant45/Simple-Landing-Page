@@ -31,12 +31,14 @@ window.onload = function() {
       $("#music").html("The last song I listened to was " + "<a class='music' href='" + song["url"] + "'>" + song.name + " by " + song.artist["#text"] + "</a>.")
     }
 
-    $('.music').tooltip({
-      html: true,
-      title: "<img src='" + song["image"][3]["#text"] + "'>",
-      placement: "auto top",
-      template: '<div class="tooltip" role="tooltip"><div class="tooltip-inner"></div></div>'
-    })
+    if (((ref = song["image"]) != null ? ref[2]["#text"] : void 0) != null) {
+      $('.music').tooltip({
+        html: true,
+        title: "<img src='" + song["image"][2]["#text"] + "'>",
+        placement: "auto top",
+        template: '<div class="tooltip" role="tooltip"><div class="tooltip-inner"></div></div>'
+      });
+    }
   });
 
   var codes = [{
