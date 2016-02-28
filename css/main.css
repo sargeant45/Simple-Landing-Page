@@ -76,6 +76,13 @@ html, body {
     .social-icons a {
         font-size: 32px;
     }
+    .social-icons {
+        text-align: center !important;
+    }
+    .social-icons a {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
 }
 
 /* Tooltip Album Art */
@@ -174,18 +181,19 @@ html, body {
 /* Social Icons */
 .social {
     width: 100% !important;
-    text-align: center;
     margin-top: 30px;
 }
 .social-icons {
     font-size: 3em;
+    text-align: justify;
 }
-.github, .twitter, .gplus, .instagram, .youtube, .soundcloud, .steam, .medium, .lastfm, .paypal {
-    transition: .2s;
-}
+
 .social-icons a {
     color: white;
     text-decoration: none;
+    transition: .2s;
+    padding-left: 0.09em;
+    padding-right: 0.09em;
 }
 
 #social-title {
