@@ -185,8 +185,6 @@ html, body {
 }
 .github, .twitter, .gplus, .instagram, .youtube, .soundcloud, .steam, .medium, .lastfm, .paypal {
     transition: .2s;
-    padding-left: 5px;
-    padding-right: 5px;
 }
 .social-icons a {
     color: white;
