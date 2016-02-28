@@ -183,8 +183,8 @@ html, body {
 .social-icons {
     font-size: 3em;
 }
-.github, .twitter, .gplus, .instagram, .youtube, .soundcloud, .steam, .medium {
-    transition: transform .2s, color .2s;
+.github, .twitter, .gplus, .instagram, .youtube, .soundcloud, .steam, .medium, .lastfm, .paypal {
+    transition: .2s;
     padding-left: 5px;
     padding-right: 5px;
 }
