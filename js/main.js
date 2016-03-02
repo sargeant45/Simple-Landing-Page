@@ -52,8 +52,6 @@ window.onload = function() {
         delay: 20
       })
     }
-
-    $(".music").tooltip("show")
   });
 
   var codes = [{
