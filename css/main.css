@@ -86,15 +86,38 @@ html, body {
 }
 
 /* Tooltip Album Art */
-.tooltip, .tooltip-inner {
+.tooltip {
     background: none;
 }
 
 .tooltip-inner img {
-    border: 5px solid #eee;
-    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);   
     width: 125px;
     height: 125px;
+}
+
+.tooltip-inner {
+    background: white;
+    padding: 5px;
+    border-radius: 0px;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);  
+}
+
+.tooltip-inner div#album-name-parent {
+    padding: 5px 5px 0px 5px;
+    width: 125px;
+    overflow-x: auto;
+}
+
+.tooltip-inner div#album-name-parent.no-art {
+    padding: 0px;
+}
+
+.tooltip-inner span#album-name {
+    width: 100%;
+    text-shadow: none;
+    color: black;
+    word-wrap: normal;
+    font-weight: bold;
 }
 
 .tooltip.fade.in {
@@ -168,7 +191,7 @@ html, body {
     transform: scale(1.1);
 }
 
-.thegame, .heck, .bright {
+.thegame, .heck {
     transition: transform .2s, color .2s;
 }
 .thegame:hover {

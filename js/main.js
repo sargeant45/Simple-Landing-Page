@@ -31,14 +31,29 @@ window.onload = function() {
       $("#music").html("The last song I listened to was " + "<a class='music' href='" + song["url"] + "'>" + song.name + " by " + song.artist["#text"] + "</a>.")
     }
 
-    if (((ref = song["image"]) != null ? ref[2]["#text"] : void 0) != null) {
+    console.log(song["image"][2]["#text"])
+
+
+
+    if (song["image"][2]["#text"] !== "") {
       $('.music').tooltip({
         html: true,
-        title: "<img src='" + song["image"][2]["#text"] + "'>",
+        title: "<img src='" + song["image"][2]["#text"] + "'><div id='album-name-parent'><span id='album-name'>" + song["album"]["#text"] + "</span></div>",
         placement: "auto top",
-        template: '<div class="tooltip" role="tooltip"><div class="tooltip-inner"></div></div>'
-      });
+        template: '<div class="tooltip" role="tooltip"><div class="tooltip-inner"></div></div>',
+        delay: 20
+      })
+    } else {
+      $('.music').tooltip({
+        html: true,
+        title: "<div id='album-name-parent' class='no-art'><span id='album-name'>" + song["album"]["#text"] + "</span></div>",
+        placement: "auto top",
+        template: '<div class="tooltip" role="tooltip"><div class="tooltip-inner"></div></div>',
+        delay: 20
+      })
     }
+
+    $(".music").tooltip("show")
   });
 
   var codes = [{
