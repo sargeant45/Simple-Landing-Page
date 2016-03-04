@@ -64,6 +64,9 @@ html, body {
 .bright:hover {
     color: #FFCA30 !important;
 }
+.fiverr:hover {
+    color: #44AB00 !important;
+}
 
 @media (max-width: 480px) {
     .jumbotron p {
