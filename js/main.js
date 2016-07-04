@@ -33,8 +33,6 @@ window.onload = function() {
 
     console.log(song["image"][2]["#text"])
 
-
-
     if (song["image"][2]["#text"] !== "") {
       $('.music').tooltip({
         html: true,
