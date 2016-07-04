@@ -21,7 +21,7 @@ window.onload = function() {
   }
   $("#email").attr("href", "mailto:" + (email.join("")));
 
-  $.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=soodologica&api_key=67bc224ceb7cea73cf835a56d247d15a&limit=2&format=json&callback=?", function(data) {
+  $.getJSON("https://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=soodologica&api_key=67bc224ceb7cea73cf835a56d247d15a&limit=2&format=json&callback=?", function(data) {
     var song = data.recenttracks.track[0]
     var ref;
 
