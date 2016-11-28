@@ -50,36 +50,49 @@ html, body {
 
 .jumbotron a:hover {
     text-decoration: none;
+    color: #ADD8E6;
+}
+
+.center {
+    text-align: center;
 }
 
 .music:hover {
-    color: #f252a2 !important;
+    color: #ADD8E6 !important;
 }
 
 .bright:hover {
     color: #FFCA30 !important;
 }
-.fiverr:hover {
-    color: #44AB00 !important;
+
+#blurb, h3{
+    font-size: 21px;
 }
 
 @media (max-width: 480px) {
     .jumbotron p {
         font-size: 14px !important;
+
+    }
+    .jumbotron h1 {
+        text-align: center;
+    }
+    .jumbotron h2 {
+        font-size: 20px;
     }
     .profile {
         width: 200px !important;
         height: 200px !important;
     }
+
     .social-icons a {
         font-size: 32px;
     }
     .social-icons {
         text-align: center !important;
     }
-    .social-icons a {
-        padding-left: 0px !important;
-        padding-right: 0px !important;
+    .jumbotron #blurb, .jumbotron h3 {
+        font-size: 18px;
     }
 }
 
@@ -206,7 +219,7 @@ html, body {
 }
 .social-icons {
     font-size: 3em;
-    text-align: justify;
+    text-align: center;
 }
 
 .social-icons a {
@@ -256,10 +269,6 @@ html, body {
 }
 .paypal:hover {
     color: #012069;
-}
-
-h5 {
-    text-align: center;
 }
 
 footer.footer pre#footer_code {
